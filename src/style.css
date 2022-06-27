@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#content {
+    min-width: 420px;
+}
+
+
+
+#content>.header {
+    background-color: #EC795B;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header>.nav-bar {
+    display: flex;
+    height: 60px;
+
+}
+
+.nav-bar>* {
+    width: 120px;
+    background-color: #EBCAB3;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-bar>*:hover {
+    background-color: #6A746F;
+}
+
+
+
+.body {
+    border: 1px solid yellow;
+}
+
+.body>.content {
+    border: 1px solid #D3B5A0;
+    /* for having overlappig cards */
+    background-color: #D3B5A0;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;
+    padding-left: min(90px, 10%);
+    padding-right: min(90px, 10%);
+    min-height: 100vh;
+}
+
+.body>.content>.text {
+    background-color: #DE7256;
+    color: white;
+
+    margin-top: -30px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 15px rgb(66, 66, 66);
+}
+
+.content>.text>.title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.content>.text>.content {
+    font-size: 1.5rem;
+}
+
+.content>.restaurant-photo {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 2px 15px rgb(66, 66, 66);
+    background-size: contain;
+}
+
+.info>* {
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.5rem;
+    background-color: #6A746F;
+    color: white;
+    box-shadow: 0px 2px 15px rgb(66, 66, 66);
+}
+
+.content>.info {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+
+/* some styling for menu page */
+
+
+
+.quote-img {
+    width: 100%;
+    height: auto;
+}
+
+
+.text.restaurant>.title {
+    text-align: center;
+}
+
+
+.menu-quote {
+    justify-content: center;
+    margin-top: 40px;
+    padding-left: min(70px, 20%);
+    padding-right: min(70px, 20%);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-quote>.text {
+    color: white;
+    font-weight: bold;
+    font-size: clamp(2.8rem, 3rem, 4.8rem);
+    max-width: 60%;
+}
+
+.menu-quote>.photo {
+    width: 25vw;
+    height: 25vw;
+    flex-shrink: 0;
+}
+
+.menu-list {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    padding-bottom: 40px;
+    padding-top: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+.menu-entry {
+    background-color: #6A746F;
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: white;
+}
+
+.menu-entry>.photo {
+    align-self: center;
+    width: 75%;
+    height: auto;
+}
+
+.menu-entry>.name {
+    font-size: 2rem;
+    align-self: center;
+}
+
+ul {
+    margin-top: 10px;
+    align-self: flex-start;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+
+
+
+/* contact us page */
+
+.content.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.logo-big {
+    height: 200px;
+}
+
+.customer-perception {
+    font-size: 3rem;
+
+}
+
+.bottom {
+
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info {
+    padding: 0;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
